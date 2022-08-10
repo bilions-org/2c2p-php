@@ -2,7 +2,7 @@
 
 ## Usage
 
-- Step 1. Setup 2c2p Credentials  
+#### Step 1. Setup 2c2p Credentials  
 ```
 use CCPP\Config;
 use CCPP\Locale;
@@ -14,7 +14,7 @@ $config->currencyCode = 'MMK';
 $config->locale       = Locale::MYANMAR;
 ```
 
-- Step 2. Prepare redirect API request payload
+#### Step 2. Prepare redirect API request payload
 ```
 use CCPP\Requests\RedirectApiRequest;
 
@@ -31,7 +31,7 @@ $request->customerEmail     = 'necessarylion@gmail.com';
 
 ```
 
-- Step 3. Get redirect Url
+#### Step 3. Get redirect Url
 ```
 use CCPP\RedirectApi;
 
@@ -39,12 +39,12 @@ $payment = new RedirectApi();
 $url     = $payment->getUrl($request);
 ```
 
-- Step 4. Store payment token and invoiceNo in your database
+#### Step 4. Store payment token and invoiceNo in your database
 ```
 $paymentToken = $payload->paymentToken();
 ```
 
-- Step 5. On frontendReturnUrl inquiry payment using paymentToken and invoiceNo
+#### Step 5. On frontendReturnUrl inquiry payment using paymentToken and invoiceNo
 ```
 $result = $payment->inquiryPayment(); // return PaymentInquiryResponse
 $success = $payment->inquiryStatus(); // return boolean (true or false)
