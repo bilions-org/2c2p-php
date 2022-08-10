@@ -1,4 +1,7 @@
-# 2c2p-PHP Library
+<img src="https://2c2p.com/assets/images/2C2P_Logo_RGB_Dark_Green-01.png" alt="2c2p" width="100"/>
+
+
+# 2c2p-PHP Library <img src="https://www.php.net//images/logos/new-php-logo.svg" alt="2c2p" width="50"/>
 
 ## Usage
 
