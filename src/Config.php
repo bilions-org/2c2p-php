@@ -12,7 +12,7 @@ class Config {
 
   public $currencyCode = 'MMK';
 
-  public $baseUrl = 'https://sandbox-pgw.2c2p.com/payment/4.1';
+  public $baseUrl = 'https://pgw.2c2p.com/payment/4.1';
 
   private static $instance = null;
 
