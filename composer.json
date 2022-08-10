@@ -1,0 +1,27 @@
+{
+    "name": "bilions/2c2p-php",
+    "description": "2c2p PHP SDK",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "CCPP\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AJ",
+            "email": "necessarylion@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "firebase/php-jwt": "^6.3",
+        "friendsofphp/php-cs-fixer": "^3.9"
+    },
+    "scripts": {
+        "fix": [
+          "vendor/bin/php-cs-fixer fix"
+        ]
+    }
+}
