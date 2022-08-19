@@ -15,6 +15,7 @@ $config->merchantId   = 'JT02';
 $config->secretKey    = '72B8F060B3B923E580411200068A764610F61034AE729AB9EF20CAFF93AFA1B9';
 $config->currencyCode = 'MMK';
 $config->locale       = Locale::MYANMAR;
+$config->baseUrl      = BaseUrl::SANDBOX;
 ```
 
 #### Step 2. Prepare redirect API request payload
@@ -28,7 +29,7 @@ $request->amount            = 10000;
 $request->frontendReturnUrl = 'https://example.com/';
 $request->description       = 'Invoice Description';
 $request->invoiceNo         = $invoiceNo;
-$request->paymentChannel    = ['ALL'];
+$request->paymentChannel    = [PaymentChannel::CREDIT_CARD];
 $request->customerName      = 'Zin Kyaw Kyaw';
 $request->customerEmail     = 'necessarylion@gmail.com';
 

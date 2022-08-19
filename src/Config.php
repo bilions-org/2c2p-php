@@ -8,13 +8,13 @@ class Config {
 
   public $locale;
 
-  public $debug = false;
+  public Bool $debug = false;
 
-  public $currencyCode = 'MMK';
+  public String $currencyCode = 'MMK';
 
   public $baseUrl = 'https://pgw.2c2p.com/payment/4.1';
 
-  private static $instance = null;
+  private static Config|Null $instance = null;
 
   public static function init() {
     if (self::$instance == null) {
